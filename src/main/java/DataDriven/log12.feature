@@ -31,15 +31,15 @@ Feature: login to crm application
 #with datatable
 
 
-Scenario: verify the user is login to crm application
+#Scenario: verify the user is login to crm application
 
-Given User is on home page
-When enters username
- 	|jagtapmahesh01@gmail.com |
-Then enters the password
-	|  JAGTAPmahesh@01 |
-Then click signin
-And user on homepage
+#Given User is on home page
+#When enters username
+# 	|jagtapmahesh01@gmail.com |
+#Then enters the password
+#	|  JAGTAPmahesh@01 |
+#Then click signin
+#And user on homepage
 
 
 

@@ -7,9 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="D:\\java_test\\Z_Cucumber\\src\\main\\java\\cucumberfirst\\login.feature"    ,
+		//features="D:\\java_test\\Z_Cucumber\\src\\main\\java\\cucumberfirst"    ,
+		features= {"@rerun-output\\failed_scanrio.txt"},
 		glue= {"cucumberfirst"}   ,
-		format= {"junit:junit-report/junit_rep.xml"},
+	//	plugin= {"junit:junit-report/junit_rep.xml","rerun:rerun-output/failed_scanrio.txt"},
 		dryRun=false
 		
 		

@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="43.784839">
-<testcase classname="login to crm application" name="verify the user is login to crm application" time="43.784839">
-<system-out><![CDATA[Given User is on home page..................................................passed
-When enters username........................................................passed
-Then enters the password....................................................passed
-Then click signin...........................................................passed
-And user on homepage........................................................passed
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="96.482351">
+<testcase classname="login to crm application" name="verify the user is login to crm application" time="96.474919">
+<system-out><![CDATA[Given User is already on home page..........................................passed
+When user enters username...................................................passed
+Then user enters password...................................................passed
+Then click on signin........................................................passed
+And user is on homepage.....................................................passed
 ]]></system-out>
+</testcase>
+<testcase classname="login to crm application" name="verify the user" time="0.006457">
+<failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:94)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:101)&#13;&#10;&#9;at cucumberfirst.login.user_username(login.java:67)&#13;&#10;&#9;at ✽.When user  username(login.feature:16)&#13;&#10;"><![CDATA[Given User  on home page....................................................passed
+When user  username.........................................................failed
+Then user  password.........................................................skipped
+And user  on homepage.......................................................skipped
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at cucumberfirst.login.user_username(login.java:67)
+	at ✽.When user  username(login.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="login to crm application" name="verify" time="0.000975">
+<failure message="java.lang.AssertionError: null&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:94)&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:101)&#13;&#10;&#9;at cucumberfirst.login.user_on_home1(login.java:86)&#13;&#10;&#9;at ✽.Given User  on home(login.feature:24)&#13;&#10;"><![CDATA[Given User  on home.........................................................failed
+When user  user.............................................................skipped
+Then user  pass.............................................................skipped
+And user  on home...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at cucumberfirst.login.user_on_home1(login.java:86)
+	at ✽.Given User  on home(login.feature:24)
+]]></failure>
 </testcase>
 </testsuite>

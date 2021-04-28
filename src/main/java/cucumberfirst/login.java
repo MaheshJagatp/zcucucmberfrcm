@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -32,6 +33,7 @@ public class login {
 	@When("^user enters username$")
 	public void user_enters_username()  {
 	   driver.findElement(By.xpath("//*[@id=\"ui\"]/div/div/form/div/div[1]/div/input")).sendKeys("jagtapmahesh01@gmail.com");
+	  
 	}
 
 	@Then("^user enters password$")
@@ -51,9 +53,51 @@ public class login {
 		String abc=driver.findElement(By.xpath("//*[@id=\"top-header-menu\"]/div[3]/span[1]")).getText();
 	   
 		System.out.println(abc);
+		driver.close();
+	}
+/* Second scenario*/
+
+	@Given("^User  on home page$")
+	public void user_on_home_page()  {
+	   
+	}
+
+	@When("^user  username$")
+	public void user_username() {
+	    Assert.fail();
+	}
+
+	@Then("^user  password$")
+	public void user_password() {
+	    
+	}
+
+	@Then("^user  on homepage$")
+	public void user_on_homepage()  {
+	   
 	}
 
 
 	
+	/**/
 
+	@Given("^User  on home$")
+	public void user_on_home1()  {
+	    Assert.fail();
+	}
+
+	@When("^user  user$")
+	public void user_user()  {
+	   
+	}
+
+	@Then("^user  pass$")
+	public void user_pass()  {
+	
+	}
+
+	@Then("^user  on home$")
+	public void user_on_home()  {
+	    
+	}
 }
